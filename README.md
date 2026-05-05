@@ -1,6 +1,8 @@
 # SamplingPseudospectrum.jl
 
-This package implements the algorithm to compute $P̂(λ)$. 
+[![CI](https://github.com/JuliaApproximation/ApproxFun.jl/actions/workflows/ci.yml/badge.svg)](https://github.com/JuliaApproximation/ApproxFun.jl/actions/workflows/ci.yml)
+
+This package implements the algorithm to compute $\hat P(λ)$. 
 
 In the case of *i.i.d.* processes (i.e. no lag computations) it can be used to compute $P(λ)$ as well, by inputting interpolation nodes and weights as data.
 
