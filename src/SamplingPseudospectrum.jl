@@ -191,4 +191,5 @@ function Pestimate(λs::Array,ΨX, ΨY; W=I,
 end
 Pestimate(λ::Number,ΨX, ΨY; kwargs...) = Pestimate([λ],ΨX, ΨY; kwargs...)[1]
 
+
 end # module SamplingPseudospectrum
