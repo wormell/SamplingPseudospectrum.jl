@@ -1,6 +1,6 @@
 # SamplingPseudospectrum.jl
 
-[![CI](https://github.com/JuliaApproximation/ApproxFun.jl/actions/workflows/ci.yml/badge.svg)](https://github.com/JuliaApproximation/ApproxFun.jl/actions/workflows/ci.yml)
+[![CI](https://github.com/wormell/SamplingPseudospectrum.jl/actions/workflows/ci.yml/badge.svg)](https://github.com/wormell/SamplingPseudospectrum.jl/actions/workflows/ci.yml)
 
 This package implements the algorithm to compute $\hat P(λ)$. 
 
