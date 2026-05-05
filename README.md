@@ -1,0 +1,29 @@
+# SamplingPseudospectrum.jl
+
+This package implements the algorithm to compute $P̂(λ)$. 
+
+In the case of *i.i.d.* processes (i.e. no lag computations) it can be used to compute $P(λ)$ as well, by inputting interpolation nodes and weights as data.
+
+Sample code:
+
+```julia
+using SamplingPseudospectrum
+
+f(x) = 3.8x*(1-x) #dynamics
+N = 10; M = 3000
+L = 10 # lag time for correlations
+
+# create an ergodic sample
+x = rand()
+for i = 1:1000; x = f(x); end # initialising sample
+xh = Array{Float64}(undef,M+1)
+xh[1] = x
+for i = 1:M; xh[i+1] = f(xh[i]); end
+
+# use polynomial dictionary
+ΨX = transpose(xh[1:end-1]).^(0:N-1)
+ΨY = transpose(xh[2:end]).^(0:N-1)
+
+λs = (-1.1:0.05:1.1) .+ (0:0.05:1.1)'*im
+Pestimate(λs,ΨX,ΨY;L,normalized=true) #outputs an array of MP̂(λ) at λs
+```
