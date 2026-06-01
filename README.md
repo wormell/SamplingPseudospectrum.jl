@@ -2,7 +2,7 @@
 
 [![CI](https://github.com/wormell/SamplingPseudospectrum.jl/actions/workflows/ci.yml/badge.svg)](https://github.com/wormell/SamplingPseudospectrum.jl/actions/workflows/ci.yml)
 
-This package implements the algorithm to compute $\hat P(λ)$. 
+This package implements the algorithm to compute the sampling pseudospectrum $\hat P(λ)$ as proposed in [Wormell 2026](https://arxiv.org/abs/2605.15234).
 
 In the case of *i.i.d.* processes (i.e. no lag computations) it can be used to compute $P(λ)$ as well, by inputting interpolation nodes and weights as data.
 
