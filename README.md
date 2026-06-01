@@ -12,7 +12,7 @@ Sample code:
 using SamplingPseudospectrum
 
 f(x) = 3.8x*(1-x) #dynamics
-N = 10; M = 3000
+N = 6; M = 1000
 L = 10 # lag time for correlations
 
 # create an ergodic sample
