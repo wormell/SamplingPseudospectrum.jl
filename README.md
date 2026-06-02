@@ -1,6 +1,6 @@
 # SamplingPseudospectrum.jl
 
-[![CI](https://github.com/wormell/SamplingPseudospectrum.jl/actions/workflows/ci.yml/badge.svg)](https://github.com/wormell/SamplingPseudospectrum.jl/actions/workflows/ci.yml)
+[![CI](https://github.com/wormell/SamplingPseudospectrum.jl/actions/workflows/main.yml/badge.svg)](https://github.com/wormell/SamplingPseudospectrum.jl/actions/workflows/main.yml)
 
 This package implements the algorithm to compute the sampling pseudospectrum $\hat P(λ)$ as proposed in [Wormell 2026](https://arxiv.org/abs/2605.15234).
 
