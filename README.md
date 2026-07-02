@@ -29,3 +29,5 @@ for i = 1:M; xh[i+1] = f(xh[i]); end
 λs = (-1.1:0.05:1.1) .+ (0:0.05:1.1)'*im
 Pestimate(λs,ΨX,ΨY;L,normalized=true) #outputs an array of MP̂(λ) at λs
 ```
+
+This works for operators estimated least squares: generalised eigenvalue problems for rank-one sample matrices can be estimated at present through `julia Pestimate([0],ΨX,ΨY;...)` where `ΨX`, `ΨY` are vectors containing the left and right vectors creating the matrices.
